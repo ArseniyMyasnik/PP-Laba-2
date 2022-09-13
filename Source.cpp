@@ -4,232 +4,232 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "rus");
 	int number;
-	cout << "¬ведите число от 1 до 999999: ";
+	cout << "Vvedite chislo ot 1 do 999999: ";
 	cin >> number;
 	while ((number <= 0) || (number > 999999)) {
-		cout << "¬веденное число не в диапазоне 1-999999: ";
+		cout << "Vvedennoe chislo ne v diapazone 1-999999: ";
 		cin >> number;
 	}
 		if (number / 100000 == 1) {
-		cout << "—то ";
+		cout << "Sto ";
 	}
 	else if (number / 100000 == 2) {
-		cout << "ƒвести ";
+		cout << "Dvesti ";
 	}
 	else if (number / 100000 == 3) {
-		cout << "“риста ";
+		cout << "Trista ";
 	}
 	else if (number / 100000 == 4) {
-		cout << "„етыреста ";
+		cout << "CHetyresta ";
 	}
 	else if (number / 100000 == 5) {
-		cout << "ѕ€тьсот ";
+		cout << "Pyat'sot ";
 	}
 	else if (number / 100000 == 6) {
-		cout << "Ўестьсот ";
+		cout << "SHest'sot ";
 	}
 	else if (number / 100000 == 7) {
-		cout << "—емьсот ";
+		cout << "Sem'sot ";
 	}
 	else if (number / 100000 == 8) {
-		cout << "¬осемьсот ";
+		cout << "Vosem'sot ";
 	}
 	else if (number / 100000 == 9) {
-		cout << "ƒев€тьсот ";
+		cout << "Devyat'sot ";
 	}
 		if ((number % 100000) / 1000 == 11) {
-			cout << "одиннадцать тыс€ч ";
+			cout << "odinnadcat' tysyach ";
 			}
 		else if ((number % 100000) / 1000 == 12) {
-			cout << "двенадцать тыс€ч ";
+			cout << "dvenadcat' tysyach ";
 			}
 		else if ((number % 100000) / 1000 == 13) {
-			cout << "тринадцать тыс€ч ";
+			cout << "trinadcat' tysyach ";
 			}
 		else if ((number % 100000) / 1000 == 14) {
-			cout << "четырнадцать тыс€ч ";
+			cout << "chetyrnadcat' tysyach ";
 			}
 		else if ((number % 100000) / 1000 == 15) {
-			cout << "п€тнадцать тыс€ч ";
+			cout << "pyatnadcat' tysyach ";
 			}
 		else if ((number % 100000) / 1000 == 16) {
-			cout << "шестнадцать тыс€ч ";
+			cout << "shestnadcat' tysyach ";
 		}
 		else if ((number % 100000) / 1000 == 17) {
-			cout << "семнадцать тыс€ч ";
+			cout << "semnadcat' tysyach ";
 			}
 		else if ((number % 100000) / 1000 == 18) {
-			cout << "восемнадцать тыс€ч ";
+			cout << "vosemnadcat' tysyach ";
 			}
 		else if ((number % 100000) / 1000 == 19) {
-			cout << "дев€тнадцать тыс€ч ";
+			cout << "devyatnadcat' tysyach ";
 			}
 		if ((number % 100000) / 1000 == 10) {
-			cout << "дес€ть ";
+			cout << "desyat' ";
 		}
 		else if ((number % 100000) / 10000 == 2) {
-			cout << "двадцать ";
+			cout << "dvadcat' ";
 		}
 		else if ((number % 100000) / 10000 == 2) {
-			cout << "двадцать ";
+			cout << "dvadcat' ";
 		}
 		else if ((number % 100000) / 10000 == 3) {
-			cout << "тридцать ";
+			cout << "tridcat' ";
 		}
 		else if ((number % 100000) / 10000 == 4) {
-			cout << "сорок ";
+			cout << "sorok ";
 		}
 		else if ((number % 100000) / 10000 == 5) {
-			cout << "п€тьдес€т ";
+			cout << "pyat'desyat ";
 		}
 		else if ((number % 100000) / 10000 == 6) {
-			cout << "шестьдес€т ";
+			cout << "shest'desyat ";
 		}
 		else if ((number % 100000) / 10000 == 7) {
-			cout << "семьдес€т ";
+			cout << "sem'desyat ";
 		}
 		else if ((number % 100000) / 10000 == 8) {
-			cout << "восемьдес€т ";
+			cout << "vosem'desyat ";
 		}
 		else if ((number % 100000) / 10000 == 9) {
-			cout << "дев€носто ";
+			cout << "devyanosto ";
 		}
 		if ((number % 10000) / 1000 == 0 && (number>999)) {
-			cout << "тыс€ч ";
+			cout << "tysyach ";
 		}
 		else if ((number % 10000) / 1000 == 1 && (number % 100000) / 1000 != 11) {
-			cout << "одна тыс€ча ";
+			cout << "odna tysyacha ";
 		}
 		else if ((number % 10000) / 1000 == 2 && (number % 100000) / 1000 != 12) {
-			cout << "две тыс€чи ";
+			cout << "dve tysyachi ";
 		}
 		else if ((number % 10000) / 1000 == 3 && (number % 100000) / 1000 != 13) {
-			cout << "три тыс€чи ";
+			cout << "tri tysyachi ";
 		}
 		else if ((number % 10000) / 1000 == 4 && (number % 100000) / 1000 != 14) {
-			cout << "четыре тыс€чи ";
+			cout << "chetyre tysyachi ";
 		}
 		else if ((number % 10000) / 1000 == 5 && (number % 100000) / 1000 != 15) {
-			cout << "п€ть тыс€ч ";
+			cout << "pyat' tysyach ";
 		}
 		else if ((number % 10000) / 1000 == 6 && (number % 100000) / 1000 != 16) {
-			cout << "шесть тыс€ч ";
+			cout << "shest' tysyach ";
 		}
 		else if ((number % 10000) / 1000 == 7 && (number % 100000) / 1000 != 17) {
-			cout << "семь тыс€ч ";
+			cout << "sem' tysyach ";
 		}
 		else if ((number % 10000) / 1000 == 8 && (number % 100000) / 1000 != 18) {
-			cout << "восемь тыс€ч ";
+			cout << "vosem' tysyach ";
 		}
 		else if ((number % 10000) / 1000 == 9 && (number % 100000) / 1000 != 19) {
-			cout << "дев€ть тыс€ч ";
+			cout << "devyat' tysyach ";
 		}
 		if ((number % 1000) / 100 == 1) {
-			cout << "сто ";
+			cout << "sto ";
 		}
 		else if ((number % 1000) / 100 == 2) {
-			cout << "двести ";
+			cout << "dvesti ";
 		}
 		else if ((number % 1000) / 100 == 3) {
-			cout << "триста ";
+			cout << "trista ";
 		}
 		else if ((number % 1000) / 100 == 4) {
-			cout << "четыреста ";
+			cout << "chetyresta ";
 		}
 		else if ((number % 1000) / 100 == 5) {
-			cout << "п€тьсот ";
+			cout << "pyat'sot ";
 		}
 		else if ((number % 1000) / 100 == 6) {
-			cout << "шестьсот ";
+			cout << "shest'sot ";
 		}
 		else if ((number % 1000) / 100 == 7) {
-			cout << "семьсот ";
+			cout << "sem'sot ";
 		}
 		else if ((number % 1000) / 100 == 8) {
-			cout << "восемьсот ";
+			cout << "vosem'sot ";
 		}
 		else if ((number % 1000) / 100 == 9) {
-			cout << "дев€тьсот ";
+			cout << "devyat'sot ";
 		}
 		if ((number % 100) == 11) {
-			cout << "одиннадцать ";
+			cout << "odinnadcat' ";
 		}
 		else if ((number % 100) == 12) {
-			cout << "двенадцать ";
+			cout << "dvenadcat' ";
 		}
 		else if ((number % 100) == 13) {
-			cout << "тринадцать ";
+			cout << "trinadcat' ";
 		}
 		else if ((number % 100) == 14) {
-			cout << "четырнадцать ";
+			cout << "chetyrnadcat' ";
 		}
 		else if ((number % 100) == 15) {
-			cout << "п€тнадцать ";
+			cout << "pyatnadcat' ";
 		}
 		else if ((number % 100) == 16) {
-			cout << "шестнадцать ";
+			cout << "shestnadcat' ";
 		}
 		else if ((number % 100) == 17) {
-			cout << "семнадцать ";
+			cout << "semnadcat' ";
 		}
 		else if ((number % 100) == 18) {
-			cout << "восемнадцать ";
+			cout << "vosemnadcat' ";
 		}
 		else if ((number % 100) == 19) {
-			cout << "дев€тнадцать ";
+			cout << "devyatnadcat' ";
 		}
 		if ((number % 100) / 10 == 10) {
-			cout << "дес€ть ";
+			cout << "desyat' ";
 		}
 		else if ((number % 100) / 10 == 2) {
-			cout << "двадцать ";
+			cout << "dvadcat' ";
 		}
 		else if ((number % 100) / 10 == 3) {
-			cout << "тридцать ";
+			cout << "tridcat' ";
 		}
 		else if ((number % 100) / 10 == 4) {
-			cout << "сорок ";
+			cout << "sorok ";
 		}
 		else if ((number % 100) / 10 == 5) {
-			cout << "п€тьдес€т ";
+			cout << "pyat'desyat ";
 		}
 		else if ((number % 100) / 10 == 6) {
-			cout << "шестьдес€т ";
+			cout << "shest'desyat ";
 		}
 		else if ((number % 100) / 10 == 7) {
-			cout << "семьдес€т ";
+			cout << "sem'desyat ";
 		}
 		else if ((number % 100) / 10 == 8) {
-			cout << "восемьдес€т ";
+			cout << "vosem'desyat ";
 		}
 		else if ((number % 100) / 10 == 9) {
-			cout << "дев€носто ";
+			cout << "devyanosto ";
 		}
 		if (number % 10 == 1) {
-			cout << "один рубль";
+			cout << "odin rubl'";
 		}
 		else if (number % 10 == 2) {
-			cout << "два рубл€";
+			cout << "dva rublya";
 		}
 		else if (number % 10 == 3) {
-			cout << "три рубл€";
+			cout << "tri rublya";
 		}
 		else if (number % 10 == 4) {
-			cout << "четыре рубл€";
+			cout << "chetyre rublya";
 		}
 		else if (number % 10 == 5) {
-			cout << "п€ть рублей";
+			cout << "pyat' rublej";
 		}
 		else if (number % 10 == 6) {
-			cout << "шесть рублей";
+			cout << "shest' rublej";
 		}
 		else if (number % 10 == 7) {
-			cout << "семь рублей";
+			cout << "sem' rublej";
 		}
 		else if (number % 10 == 8) {
-			cout << "восемь рублей";
+			cout << "vosem' rublej";
 		}
 		else if (number % 10 == 9) {
-			cout << "дев€ть рублей";
+			cout << "devyat' rublej";
 		}
 }
